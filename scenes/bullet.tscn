@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgjgp2ixkckwh"]
+
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_8j2vp"]
+[ext_resource type="Texture2D" uid="uid://yl6rid1s3lmc" path="res://textures/pylya (1).png" id="2_o53q7"]
+[ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="3_eys8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8vjs"]
+size = Vector2(8, 5)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_8j2vp")
+
+[node name="Pylya(1)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4.47177, 2.5)
+scale = Vector2(0.540797, 0.555555)
+texture = ExtResource("2_o53q7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 2.5)
+shape = SubResource("RectangleShape2D_v8vjs")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("3_eys8k")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+scale = Vector2(0.744792, 0.744792)
+polygon = PackedVector2Array(0, 6.71329, 0, 0, 10, 0, 12.0839, 2.68531, 12.0839, 4.02797, 9.3986, 6.71329)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

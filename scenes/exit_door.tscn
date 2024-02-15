@@ -1,0 +1,154 @@
+[gd_scene load_steps=11 format=3 uid="uid://dqh3rbl6hy2cs"]
+
+[ext_resource type="Script" path="res://scripts/exit_door.gd" id="1_n1dbx"]
+[ext_resource type="Texture2D" uid="uid://cxlopj230w2vo" path="res://textures/door.png" id="1_uw8tq"]
+[ext_resource type="Texture2D" uid="uid://53m3i46li0cq" path="res://textures/Keyboard & Mouse/Default/keyboard_f.png" id="3_ajd7g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2e5i0"]
+size = Vector2(8, 64)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u4u6l"]
+radius = 32.0
+height = 90.0
+
+[sub_resource type="Animation" id="Animation_nbmy8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KeyboardF:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_ajd7g")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("KeyboardF:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7b6r8"]
+resource_name = "close"
+length = 0.42
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [2, 1, 0, 3]
+}
+
+[sub_resource type="Animation" id="Animation_3dfpb"]
+resource_name = "f"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KeyboardF:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_ajd7g")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KeyboardF:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(15, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ke2qu"]
+resource_name = "open"
+length = 0.42
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1.03526),
+"update": 1,
+"values": [3, 0, 1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m5i7t"]
+_data = {
+"RESET": SubResource("Animation_nbmy8"),
+"close": SubResource("Animation_7b6r8"),
+"f": SubResource("Animation_3dfpb"),
+"open": SubResource("Animation_ke2qu")
+}
+
+[node name="exit_door" type="CharacterBody2D"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_n1dbx")
+
+[node name="Door" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_uw8tq")
+hframes = 5
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2e5i0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_u4u6l")
+
+[node name="KeyboardF" type="Sprite2D" parent="."]
+visible = false
+rotation = -1.57079
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("3_ajd7g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_m5i7t")
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

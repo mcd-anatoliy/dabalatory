@@ -1,0 +1,15 @@
+res://scenes/bullet.tscn::a1d11efa0d4bbd18b6be7686dfbfa805::1708006089::res://.godot/exported/133200997/export-6d8e6ff1e6f20a36e0402d27c623c86c-bullet.scn
+res://scenes/death_wish.tscn::d755275f34994ce84e3b55508a4ca4e3::1708006089::res://.godot/exported/133200997/export-fd647d14ede23885f8f8e724f8f98870-death_wish.scn
+res://scenes/enemy.tscn::e1f421bd084810f760e0e080149a7b38::1708006089::res://.godot/exported/133200997/export-a930820ec0ab16db6719aff4daa500f9-enemy.scn
+res://scenes/hall.tscn::48854be6a1934b69a953e33fa7e2e0ed::1708006087::res://.godot/exported/133200997/export-90fd926d231ca6fefa445ab1f55910f6-hall.scn
+res://scenes/main.tscn::73f8fc9dde85d67b86daae8b99661caf::1708006086::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/player.tscn::83b7c9a71db0297c2c819bfd0e5f52c7::1708006089::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/right_zone.tscn::1fc44ee0ba16c3570ad5764d113bb3ef::1708006088::res://.godot/exported/133200997/export-2b13c8da46e2d9cb74b7b44fb1fc1d08-right_zone.scn
+res://scenes/Start.tscn::27621306c7261b3fb51d874c5c97f2ad::1708006089::res://.godot/exported/133200997/export-2b71f9b4e89d916346f8f233612beb15-Start.scn
+res://scenes/tile_map.tscn::5dd04161d5f89eccf96f1e1083822c97::1707683599::res://.godot/exported/133200997/export-ce269969b9a807b5cc5b406a10a1234a-tile_map.scn
+res://scenes/transition.tscn::ef49887000d7d3213bb7a21c7f15ee1b::1707683599::res://.godot/exported/133200997/export-c5d0fcfa37b41758e77048240f661414-transition.scn
+res://scenes/up_turcia.tscn::cdef78666cb58669b06f2f1684283a97::1708006089::res://.godot/exported/133200997/export-ab93ad09479ecc04c0cfeff0f48641ab-up_turcia.scn
+res://scenes/door.tscn::5d96e7937c286f0bbdb36a058a1e9314::1708006089::res://.godot/exported/133200997/export-3370694a3d56567dea5c3bf0058a536d-door.scn
+res://scenes/exit_door.tscn::5ce5d60b3f0e559959afa0ce526a9cb7::1708006089::res://.godot/exported/133200997/export-1e75bbc9ffaf0a41bdaa4e09c685b475-exit_door.scn
+res://scenes/key.tscn::3ba0e26e0c016de9f6f9936400081b1f::1708006089::res://.godot/exported/133200997/export-6abd909df14327bc0bd961849d92c0a4-key.scn
+res://scenes/the_end.tscn::4e7e4c73c6f3ff0c860a3c2174d90876::1708006089::res://.godot/exported/133200997/export-6db59f9932081252d1e85d3ee89c960d-the_end.scn

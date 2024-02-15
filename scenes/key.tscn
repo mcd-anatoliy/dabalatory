@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=3 uid="uid://c78pvi0vrhl7t"]
+
+[ext_resource type="Script" path="res://scripts/key.gd" id="1_fm102"]
+[ext_resource type="Texture2D" uid="uid://b73db7l0n0d4g" path="res://textures/key.png" id="1_gcdki"]
+[ext_resource type="Texture2D" uid="uid://53m3i46li0cq" path="res://textures/Keyboard & Mouse/Default/keyboard_f.png" id="3_i0fcb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kss0"]
+size = Vector2(17, 25)
+
+[sub_resource type="Animation" id="Animation_lijfs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Key:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_gcdki")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Key:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_63v00"]
+resource_name = "f"
+length = 0.3
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_30bot"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Key:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_gcdki")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Key:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(1.03526, 1, 1, 1),
+"update": 2,
+"values": [Vector2(0, 0), Vector2(0, -5), Vector2(0, -5), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4drlu"]
+_data = {
+"RESET": SubResource("Animation_lijfs"),
+"f": SubResource("Animation_63v00"),
+"idle": SubResource("Animation_30bot")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0c4ux"]
+radius = 52.5547
+
+[node name="key" type="StaticBody2D"]
+texture_filter = 1
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_fm102")
+
+[node name="Key" type="Sprite2D" parent="."]
+texture = ExtResource("1_gcdki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -0.5)
+shape = SubResource("RectangleShape2D_1kss0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_4drlu")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_0c4ux")
+
+[node name="KeyboardF" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -20)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("3_i0fcb")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

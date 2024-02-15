@@ -1,0 +1,93 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708011358
+export_presets.cfg::TextFile::-1::1708011352::0::1::::<><>::
+icon.svg::CompressedTexture2D::5651587823976500308::1708011352::1708011352::1::::<><>::
+::res://addons/::1708011351
+::res://beta_exe_files/::1708011352
+::res://beta_exe_files/1st vesion/::1708011352
+export_presets.cfg::TextFile::-1::1708011352::0::1::::<><>::
+::res://beta_exe_files/2nd version/::1708011352
+::res://scenes/::1708011352
+bullet.tscn::PackedScene::5212946349413464875::1708011352::0::1::::<><>::res://scripts/bullet.gd<>uid://yl6rid1s3lmc::::res://textures/pylya (1).png<>res://scripts/CharacterBody2D.gd
+death_wish.tscn::PackedScene::1355294774072280112::1708011352::0::1::::<><>::res://scripts/death_wish.gd
+door.tscn::PackedScene::8245749372911242665::1708011352::0::1::::<><>::res://scripts/door.gd<>uid://cxlopj230w2vo::::res://textures/door.png<>uid://53m3i46li0cq::::res://textures/Keyboard & Mouse/Default/keyboard_f.png
+enemy.tscn::PackedScene::3794368234413535804::1708011352::0::1::::<><>::uid://bhfmmg7kvpa75::::res://textures/Bot Wheel/move with FX.png<>res://scripts/enemy.gd<>uid://dhpb1p5w77j82::::res://textures/Bot Wheel/shoot with FX.png<>uid://1b3xrvqpw6qd::::res://textures/Bot Wheel/static idle.png<>uid://1xbejx0tdym5::::res://textures/Bot Wheel/charge.png<>uid://i7v5o42xm0vt::::res://textures/Bot Wheel/damaged.png<>uid://c05qef80epxsf::::res://textures/Bot Wheel/wake.png<>uid://cdw3x0cmewjri::::res://textures/Bot Wheel/death.png
+exit_door.tscn::PackedScene::8298464698795109778::1708011352::0::1::::<><>::res://scripts/exit_door.gd<>uid://cxlopj230w2vo::::res://textures/door.png<>uid://53m3i46li0cq::::res://textures/Keyboard & Mouse/Default/keyboard_f.png
+hall.tscn::PackedScene::6820430917601269669::1708011352::0::1::::<><>::uid://bkeq615dclr1::::res://scenes/tile_map.tscn<>res://scripts/hall.gd<>uid://dhca874ad8q4v::::res://scenes/player.tscn<>uid://bwdafx0jgfl6l::::res://textures/sci-fi/layers/back.png<>uid://rbwnvp8hstih::::res://textures/Space-station._32_2.jpg<>uid://cm0tt6arn8bg0::::res://scenes/transition.tscn<>uid://51go7dd367ty::::res://textures/1614413145_55-p-prozrachnii-temnii-fon-png-78.png<>uid://bucaxqfyc3ggy::::res://scenes/enemy.tscn<>uid://jpd2yawbatwe::::res://textures/sci-fi/layers/Props/tank-2.png<>uid://tm38itnhnasf::::res://textures/sci-fi/layers/Props/tank-1.png<>uid://2kcaya4dih3h::::res://textures/sci-fi/layers/Props/support.png<>uid://c78pvi0vrhl7t::::res://scenes/key.tscn
+key.tscn::PackedScene::7087957546034772903::1708011352::0::1::::<><>::res://scripts/key.gd<>uid://b73db7l0n0d4g::::res://textures/key.png<>uid://53m3i46li0cq::::res://textures/Keyboard & Mouse/Default/keyboard_f.png
+main.tscn::PackedScene::4964939241212051697::1708011352::0::1::::<><>::uid://bkeq615dclr1::::res://scenes/tile_map.tscn<>res://scripts/main.gd<>uid://dhca874ad8q4v::::res://scenes/player.tscn<>uid://rbwnvp8hstih::::res://textures/Space-station._32_2.jpg<>uid://cm0tt6arn8bg0::::res://scenes/transition.tscn<>uid://51go7dd367ty::::res://textures/1614413145_55-p-prozrachnii-temnii-fon-png-78.png<>uid://bwdafx0jgfl6l::::res://textures/sci-fi/layers/back.png<>uid://blp2kyfb8o0wt::::res://textures/sci-fi/layers/Props/tank-3.png
+player.tscn::PackedScene::7654773368804369191::1708011352::0::1::::<><>::res://scripts/player.gd<>uid://287dg8lcb30u::::res://textures/Новая папка/Sprite-0001.png<>uid://djeggl2kariwo::::res://textures/Sprite-0001.png<>uid://bwj48njceet4k::::res://textures/Новая папка/flying.png<>uid://cm0lxi0l66yvx::::res://textures/Новая папка/Sprite-232.png<>uid://dvfgxng5qjw3w::::res://textures/Новая папка/fly_shoot.png<>uid://c3ugiqcx0whod::::res://textures/Новая папка/aaaaaa.png
+right_zone.tscn::PackedScene::8961968496146052955::1708011352::0::1::::<><>::res://scripts/right_zone.gd<>uid://bkeq615dclr1::::res://scenes/tile_map.tscn<>uid://dhca874ad8q4v::::res://scenes/player.tscn<>uid://51go7dd367ty::::res://textures/1614413145_55-p-prozrachnii-temnii-fon-png-78.png<>uid://rbwnvp8hstih::::res://textures/Space-station._32_2.jpg<>uid://bwdafx0jgfl6l::::res://textures/sci-fi/layers/back.png<>uid://cm0tt6arn8bg0::::res://scenes/transition.tscn<>uid://dpqkj1kbrj4jl::::res://scenes/door.tscn<>uid://bucaxqfyc3ggy::::res://scenes/enemy.tscn<>uid://c78pvi0vrhl7t::::res://scenes/key.tscn<>uid://dqh3rbl6hy2cs::::res://scenes/exit_door.tscn<>uid://2kcaya4dih3h::::res://textures/sci-fi/layers/Props/support.png<>uid://jpd2yawbatwe::::res://textures/sci-fi/layers/Props/tank-2.png<>uid://tm38itnhnasf::::res://textures/sci-fi/layers/Props/tank-1.png<>uid://blp2kyfb8o0wt::::res://textures/sci-fi/layers/Props/tank-3.png
+Start.tscn::PackedScene::981591136202564623::1708011352::0::1::::<><>::res://scripts/start.gd
+the_end.tscn::PackedScene::1708135737402425460::1708011352::0::1::::<><>::res://scripts/the_end.gd<>uid://b1csqadkk6gtj::::res://textures/quote-2024-02-14-e3d3013f69eba96e231214a43af8dce6.jpg
+tile_map.tscn::PackedScene::91105731608107272::1708011352::0::1::::<><>::uid://ba8s33gyln5je::::res://textures/Space-station._32_2.png
+transition.tscn::PackedScene::5667906116855768417::1708011352::0::1::::<><>::res://scripts/transition.gd
+up_turcia.tscn::PackedScene::7923067564266666498::1708011352::0::1::::<><>::uid://bkeq615dclr1::::res://scenes/tile_map.tscn<>res://scripts/up_turcia.gd<>uid://dhca874ad8q4v::::res://scenes/player.tscn<>uid://rbwnvp8hstih::::res://textures/Space-station._32_2.jpg<>uid://51go7dd367ty::::res://textures/1614413145_55-p-prozrachnii-temnii-fon-png-78.png<>uid://bwdafx0jgfl6l::::res://textures/sci-fi/layers/back.png<>uid://cm0tt6arn8bg0::::res://scenes/transition.tscn<>uid://c78pvi0vrhl7t::::res://scenes/key.tscn<>uid://bucaxqfyc3ggy::::res://scenes/enemy.tscn<>uid://tm38itnhnasf::::res://textures/sci-fi/layers/Props/tank-1.png<>uid://jpd2yawbatwe::::res://textures/sci-fi/layers/Props/tank-2.png
+::res://scripts/::1708011352
+bullet.gd::GDScript::-1::1708011352::0::1::::<>Area2D<>::
+CharacterBody2D.gd::GDScript::-1::1708011352::0::1::::<>CharacterBody2D<>::
+death_wish.gd::GDScript::-1::1708011352::0::1::::<>Control<>::
+door.gd::GDScript::-1::1708011352::0::1::::<>CharacterBody2D<>::
+enemy.gd::GDScript::-1::1708011352::0::1::::<>CharacterBody2D<>::
+exit_door.gd::GDScript::-1::1708011352::0::1::::<>CharacterBody2D<>::
+global.gd::GDScript::-1::1708011352::0::1::::<>Node<>::
+hall.gd::GDScript::-1::1708011352::0::1::::<>Node2D<>::
+key.gd::GDScript::-1::1708011352::0::1::::<>StaticBody2D<>::
+main.gd::GDScript::-1::1708011352::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1708011352::0::1::::<>CharacterBody2D<>::
+right_zone.gd::GDScript::-1::1708011352::0::1::::<>Node2D<>::
+start.gd::GDScript::-1::1708011352::0::1::::<>Control<>::
+the_end.gd::GDScript::-1::1708011352::0::1::::<>Control<>::
+transition.gd::GDScript::-1::1708011352::0::1::::<>CanvasLayer<>::
+up_turcia.gd::GDScript::-1::1708011352::0::1::::<>Node2D<>::
+::res://sounds/::1708011352
+collecting items.mp3::AudioStreamMP3::1727371243914838072::1708011352::1708011352::1::::<><>::
+movement.mp3::AudioStreamMP3::3820454054994308880::1708011352::1708011352::1::::<><>::
+::res://textures/::1708011352
+2103f59ae56c8073e826c04c2ea7215c.jpg::CompressedTexture2D::1322121082054445641::1708011352::1708011352::1::::<><>::
+1614413145_55-p-prozrachnii-temnii-fon-png-78.png::CompressedTexture2D::2159730119374390646::1708011352::1708011352::1::::<><>::
+door.png::CompressedTexture2D::6410770266889275844::1708011352::1708011352::1::::<><>::
+key.png::CompressedTexture2D::4690451892890313572::1708011352::1708011352::1::::<><>::
+pylya (1).png::CompressedTexture2D::1709153413907281478::1708011352::1708011352::1::::<><>::
+quote-2024-02-14-e3d3013f69eba96e231214a43af8dce6.jpg::CompressedTexture2D::4216580857465694143::1708011352::1708011352::1::::<><>::
+Space-station._32_2.jpg::CompressedTexture2D::1196634836434108483::1708011352::1708011352::1::::<><>::
+Space-station._32_2.png::CompressedTexture2D::2455689538704533446::1708011352::1708011352::1::::<><>::
+::res://textures/Bot Wheel/::1708011352
+charge.png::CompressedTexture2D::1872458992502677822::1708011352::1708011352::1::::<><>::
+damaged.png::CompressedTexture2D::628900249283638065::1708011352::1708011352::1::::<><>::
+death.png::CompressedTexture2D::5030566674671696478::1708011352::1708011352::1::::<><>::
+GAS dash FX.png::CompressedTexture2D::9067751337165411976::1708011352::1708011352::1::::<><>::
+GAS dash with FX.png::CompressedTexture2D::7140318125669367858::1708011352::1708011352::1::::<><>::
+move FX.png::CompressedTexture2D::7837770266003769008::1708011352::1708011352::1::::<><>::
+move with FX.png::CompressedTexture2D::2888814876426533094::1708011352::1708011352::1::::<><>::
+move without FX.png::CompressedTexture2D::8041475271183212326::1708011352::1708011352::1::::<><>::
+shoot FX.png::CompressedTexture2D::2012356098292878670::1708011352::1708011352::1::::<><>::
+shoot with FX.png::CompressedTexture2D::7681657605728716257::1708011352::1708011352::1::::<><>::
+shoot without FX.png::CompressedTexture2D::6621097899410892269::1708011352::1708011352::1::::<><>::
+static idle.png::CompressedTexture2D::1828716387485933439::1708011352::1708011352::1::::<><>::
+wake.png::CompressedTexture2D::6590472720755832157::1708011352::1708011352::1::::<><>::
+::res://textures/Keyboard & Mouse/::1708011352
+::res://textures/Keyboard & Mouse/Default/::1708011352
+keyboard_f.png::CompressedTexture2D::2164246958806850376::1708011352::1708011352::1::::<><>::
+keyboard_f_outline.png::CompressedTexture2D::8951911638553020997::1708011352::1708011352::1::::<><>::
+::res://textures/sci-fi/::1708011352
+public-license.txt::TextFile::-1::1708011352::0::1::::<><>::
+::res://textures/sci-fi/aseprite/::1708011352
+::res://textures/sci-fi/layers/::1708011352
+back.png::CompressedTexture2D::3936778553035828157::1708011352::1708011352::1::::<><>::
+front.png::CompressedTexture2D::5465179078899993649::1708011352::1708011352::1::::<><>::
+middle.png::CompressedTexture2D::9054811007741368620::1708011352::1708011352::1::::<><>::
+::res://textures/sci-fi/layers/Props/::1708011352
+support.png::CompressedTexture2D::1915865251635368299::1708011352::1708011352::1::::<><>::
+tank-1.png::CompressedTexture2D::1360120019306266657::1708011352::1708011352::1::::<><>::
+tank-2.png::CompressedTexture2D::662896888028261516::1708011352::1708011352::1::::<><>::
+tank-3.png::CompressedTexture2D::3191122115140637379::1708011352::1708011352::1::::<><>::
+::res://textures/sci-fi/previews/::1708011352
+scifi-lab.png::CompressedTexture2D::3509911789297023486::1708011352::1708011352::1::::<><>::
+::res://textures/����������/::1708011352
+aaaaaa.png::CompressedTexture2D::6779795977182649883::1708011352::1708011360::1::::<><>::
+boom.png::CompressedTexture2D::1154624943915171101::1708011352::1708011360::1::::<><>::
+flying.png::CompressedTexture2D::3950975064308628496::1708011352::1708011360::1::::<><>::
+fly_shoot.png::CompressedTexture2D::8643955724921896110::1708011352::1708011360::1::::<><>::
+Sprite-0001.png::CompressedTexture2D::1965171911882269982::1708011352::1708011360::1::::<><>::
+Sprite-232.png::CompressedTexture2D::5667426354423703369::1708011352::1708011360::1::::<><>::
